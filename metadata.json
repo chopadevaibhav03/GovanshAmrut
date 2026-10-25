@@ -1,0 +1,6 @@
+{
+  "name": "Govansh: Desi Cow Goshala & Organic Farming",
+  "description": "Informative bilingual platform for Govansh Goshala and sustainable organic farming by Anita and Ramkisan Chopade. Explore traditional A2 Bilona ghee, Gokrupa Amrut bio-fertilizer, cow shelter donations, and farming blogs.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

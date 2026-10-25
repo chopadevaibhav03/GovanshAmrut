@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    font-family: 'Plus Jakarta Sans', 'Noto Sans Devanagari', system-ui, -apple-system, sans-serif;
+    scroll-behavior: smooth;
+  }
+}
+
+.font-serif-vedic {
+  font-family: 'Rozha One', serif;
+}
+
+/* Custom scrollbar for horizontal product / gallery scrolls */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f7f4ee;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d4cbb8;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b5a88e;
+}
