@@ -92,13 +92,13 @@ export default function App() {
           <Phone className="w-5 h-5" />
         </a>
 
-        {/* Direct WhatsApp Chat Button (7263833539) */}
+        {/* Direct WhatsApp Chat Button (7263823539) */}
         <a
-          href="https://wa.me/917263833539?text=%E0%A4%A8%E0%A4%AE%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%BE%E0%A4%B0!%20%E0%A4%AE%E0%A4%B2%E0%A4%BE%20%E0%A4%97%E0%A5%8B%E0%A4%B5%E0%A4%82%E0%A4%B6%20%E0%A4%97%E0%A5%8B%E0%A4%B6%E0%A4%BE%E0%A4%B3%E0%A5%87%E0%A4%AC%E0%A4%A6%E0%A5%8D%E0%A4%A4%E0%A4%B2%20%E0%A4%AE%E0%A4%BE%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A5%80%20%E0%A4%B9%E0%A4%B5%E0%A5%80%20%E0%A4%86%E0%A4%B9%E0%A5%87."
+          href="https://wa.me/917263823539?text=%E0%A4%A8%E0%A4%AE%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%BE%E0%A4%B0!%20%E0%A4%AE%E0%A4%B2%E0%A4%BE%20%E0%A4%97%E0%A5%8B%E0%A4%B5%E0%A4%82%E0%A4%B6%20%E0%A4%97%E0%A5%8B%E0%A4%B6%E0%A4%BE%E0%A4%B3%E0%A5%87%E0%A4%AC%E0%A4%A6%E0%A5%8D%E0%A4%A4%E0%A4%B2%20%E0%A4%AE%E0%A4%BE%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A5%80%20%E0%A4%B9%E0%A4%B5%E0%A5%80%20%E0%A4%86%E0%A4%B9%E0%A5%87."
           target="_blank"
           rel="noopener noreferrer"
           className="pointer-events-auto p-3 sm:px-4 sm:py-3 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs sm:text-sm shadow-xl flex items-center gap-2 transition-all hover:scale-105 active:scale-95 cursor-pointer"
-          title="व्हॉट्सअ‍ॅपवर बोला (+91 72638 33539)"
+          title="व्हॉट्सअ‍ॅपवर बोला (+91 72638 23539)"
           aria-label="Chat on WhatsApp"
         >
           <MessageSquare className="w-5 h-5 fill-white" />

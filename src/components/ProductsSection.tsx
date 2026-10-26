@@ -89,7 +89,7 @@ export const ProductsSection: React.FC<ProductsSectionProps> = ({ currentLang })
             const whatsappMsg = encodeURIComponent(
               `नमस्कार! मी गोवंश वेबसाइटवरून संपर्क करत आहे. मला '${product.name[lang]}' (किंमत: ₹${product.price} / ${product.unit[lang]}) बद्दल माहिती हवी आहे किंवा ऑर्डर करायचे आहे.`
             );
-            const whatsappUrl = `https://wa.me/917263833539?text=${whatsappMsg}`;
+            const whatsappUrl = `https://wa.me/917263823539?text=${whatsappMsg}`;
 
             return (
               <div

@@ -14,21 +14,55 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ currentLang }) =
   const [interest, setInterest] = useState('interestOption1');
   const [message, setMessage] = useState('');
   const [isSubmitted, setIsSubmitted] = useState(false);
-  const [loading, setLoading] = useState(false);
+  const [formError, setFormError] = useState('');
+  const [whatsappUrl, setWhatsappUrl] = useState('');
 
   const t = translations[currentLang];
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-      setIsSubmitted(true);
-      setName('');
-      setPhone('');
-      setEmail('');
-      setMessage('');
-    }, 700);
+    const digits = phone
+      .replace(/[०-९]/g, (digit) => String(digit.charCodeAt(0) - 0x0966))
+      .replace(/\D/g, '');
+    const nationalPhone = digits.length === 12 && digits.startsWith('91')
+      ? digits.slice(2)
+      : digits.length === 11 && digits.startsWith('0')
+        ? digits.slice(1)
+        : digits;
+
+    if (!/^[6-9]\d{9}$/.test(nationalPhone)) {
+      setFormError(t.contact.phoneValidation);
+      return;
+    }
+
+    const trimmedEmail = email.trim();
+    if (trimmedEmail && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(trimmedEmail)) {
+      setFormError(t.contact.emailValidation);
+      return;
+    }
+
+    const interestOptions = [
+      { value: 'interestOption1', label: t.contact.interestOption1 },
+      { value: 'interestOption2', label: t.contact.interestOption2 },
+      { value: 'interestOption3', label: t.contact.interestOption3 },
+      { value: 'interestOption4', label: t.contact.interestOption4 },
+    ];
+    const selectedInterest = interestOptions.find((option) => option.value === interest)?.label ?? interest;
+    const whatsappMessage = [
+      'नमस्कार, मला गोवंश वेबसाइटवरून संपर्क करायचा आहे.',
+      '',
+      `${t.contact.nameLabel}: ${name.trim()}`,
+      `${t.contact.phoneLabel}: ${phone.trim()}`,
+      `${t.contact.emailLabel}: ${trimmedEmail || '-'}`,
+      `${t.contact.interestLabel}: ${selectedInterest}`,
+      `${t.contact.messageLabel}: ${message.trim()}`,
+    ].join('\n');
+    const url = `https://wa.me/917263823539?text=${encodeURIComponent(whatsappMessage)}`;
+
+    setFormError('');
+    setWhatsappUrl(url);
+    window.open(url, '_blank', 'noopener,noreferrer');
+    setIsSubmitted(true);
   };
 
   return (
@@ -60,17 +94,29 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ currentLang }) =
                   <CheckCircle2 className="w-8 h-8" />
                 </div>
                 <h3 className="font-serif-vedic text-2xl font-bold text-stone-900">
-                  संदेश पाठवला गेला आहे!
+                  {t.contact.whatsappReadyTitle}
                 </h3>
                 <p className="text-stone-600 max-w-md mx-auto text-sm leading-relaxed">
-                  {t.contact.successMsg}
+                  {t.contact.whatsappNextStep}
                 </p>
+                <a
+                  href={whatsappUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 px-6 py-2.5 text-xs sm:text-sm font-semibold text-white bg-emerald-600 hover:bg-emerald-700 rounded-xl transition-colors"
+                >
+                  <MessageSquare className="w-4 h-4" />
+                  {t.contact.openWhatsapp}
+                </a>
                 <button
                   type="button"
-                  onClick={() => setIsSubmitted(false)}
+                  onClick={() => {
+                    setIsSubmitted(false);
+                    setFormError('');
+                  }}
                   className="px-6 py-2.5 text-xs sm:text-sm font-semibold text-amber-800 bg-amber-50 hover:bg-amber-100 rounded-xl transition-colors cursor-pointer"
                 >
-                  आणखी एक संदेश पाठवा
+                  {t.contact.sendAnotherMessage}
                 </button>
               </div>
             ) : (
@@ -96,10 +142,15 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ currentLang }) =
                     </label>
                     <input
                       type="tel"
+                      inputMode="tel"
                       required
                       placeholder="१० अंकी मोबाईल नंबर"
                       value={phone}
-                      onChange={(e) => setPhone(e.target.value)}
+                      autoComplete="tel"
+                      onChange={(e) => {
+                        setPhone(e.target.value);
+                        setFormError('');
+                      }}
                       className="w-full bg-stone-50 border border-stone-200 rounded-xl px-4 py-2.5 text-stone-900 text-sm focus:bg-white focus:border-amber-500 focus:outline-hidden"
                     />
                   </div>
@@ -114,7 +165,11 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ currentLang }) =
                       type="email"
                       placeholder="ईमेल पत्ता (ऐच्छिक)"
                       value={email}
-                      onChange={(e) => setEmail(e.target.value)}
+                      autoComplete="email"
+                      onChange={(e) => {
+                        setEmail(e.target.value);
+                        setFormError('');
+                      }}
                       className="w-full bg-stone-50 border border-stone-200 rounded-xl px-4 py-2.5 text-stone-900 text-sm focus:bg-white focus:border-amber-500 focus:outline-hidden"
                     />
                   </div>
@@ -150,13 +205,18 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ currentLang }) =
                   />
                 </div>
 
+                {formError && (
+                  <p role="alert" className="text-sm text-red-700">
+                    {formError}
+                  </p>
+                )}
+
                 <button
                   type="submit"
-                  disabled={loading}
                   className="w-full py-3.5 px-6 rounded-xl font-bold text-sm sm:text-base text-white bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 shadow-md transition-all active:scale-95 cursor-pointer flex items-center justify-center gap-2"
                 >
                   <Send className="w-4 h-4" />
-                  <span>{loading ? t.contact.submitting : t.contact.submitBtn}</span>
+                  <span>{t.contact.submitBtn}</span>
                 </button>
               </form>
             )}
@@ -226,10 +286,10 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ currentLang }) =
                 </div>
               </div>
 
-              {/* Quick WhatsApp chat prompt - strictly 7263833539 */}
+              {/* Quick WhatsApp chat prompt */}
               <div className="pt-3 border-t border-stone-100">
                 <a
-                  href="https://wa.me/917263833539?text=%E0%A4%A8%E0%A4%AE%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%BE%E0%A4%B0!%20%E0%A4%AE%E0%A4%B2%E0%A4%BE%20%E0%A4%97%E0%A5%8B%E0%A4%B5%E0%A4%82%E0%A4%B6%20%E0%A4%97%E0%A5%8B%E0%A4%B6%E0%A4%BE%E0%A4%B3%E0%A5%87%E0%A4%B2%E0%A4%BE%20%E0%A4%AD%E0%A5%87%E0%A4%9F%20%E0%A4%A6%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%9A%E0%A5%80%20%E0%A4%86%E0%A4%B9%E0%A5%87."
+                  href="https://wa.me/917263823539?text=%E0%A4%A8%E0%A4%AE%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A4%BE%E0%A4%B0!%20%E0%A4%AE%E0%A4%B2%E0%A4%BE%20%E0%A4%97%E0%A5%8B%E0%A4%B5%E0%A4%82%E0%A4%B6%20%E0%A4%97%E0%A5%8B%E0%A4%B6%E0%A4%BE%E0%A4%B3%E0%A5%87%E0%A4%B2%E0%A4%BE%20%E0%A4%AD%E0%A5%87%E0%A4%9F%20%E0%A4%A6%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AF%E0%A4%9A%E0%A5%80%20%E0%A4%86%E0%A4%B9%E0%A5%87."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full py-3 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition-colors"

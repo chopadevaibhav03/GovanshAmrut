@@ -22,7 +22,7 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
   const whatsappMessage = encodeURIComponent(
     `नमस्कार! मी गोवंश वेबसाइटवरून संपर्क करत आहे. मला '${product.name[lang]}' (किंमत: ₹${product.price} / ${product.unit[lang]}) बद्दल माहिती हवी आहे / खरेदी करायचे आहे.`
   );
-  const whatsappUrl = `https://wa.me/917263833539?text=${whatsappMessage}`;
+  const whatsappUrl = `https://wa.me/917263823539?text=${whatsappMessage}`;
 
   return (
     <div className="fixed inset-0 z-50 overflow-y-auto bg-stone-950/75 backdrop-blur-sm flex items-center justify-center p-3 sm:p-6 animate-in fade-in duration-200">
