@@ -20,7 +20,7 @@ export const blogs: Blog[] = [
       hi: 'रामकिसन चोपडे (गोसेवक एवं संस्थापक)',
       en: 'Ramkisan Chopade (Founder & Gau-Sevak)'
     },
-    image: '/src/assets/images/traditional_bilona_ghee_1792948906344.jpg',
+    image: '/images/traditional_bilona_ghee_1792948906344.jpg',
     title: {
       mr: 'पारंपारिक वैदिक बिलोना तूप आणि बाजारातील फॅक्टरी तूप यांमधील ५ मोठे फरक',
       hi: 'पारंपरिक वैदिक बिलोना घी और बाजार के इंडस्ट्रियल घी में ५ बड़े अंतर',
@@ -94,7 +94,7 @@ export const blogs: Blog[] = [
       hi: 'अनीता चोपडे (प्राकृतिक कृषि मार्गदर्शक)',
       en: 'Anita Chopade (Co-Founder & Organic Mentor)'
     },
-    image: '/src/assets/images/organic_farm_gokrupa_1792948906345.jpg',
+    image: '/images/organic_farm_gokrupa_1792948906345.jpg',
     title: {
       mr: 'गोकृपा अमृत: रासायनिक खतांना पूर्ण फाटा देऊन जमिनीची सुपीकता कशी वाढवावी?',
       hi: 'गोकृपा अमृत: रासायनिक उर्वरकों को अलविदा कह मिट्टी को कैसे बनाएं उपजाऊ?',
@@ -165,7 +165,7 @@ export const blogs: Blog[] = [
       hi: 'कृषि वैज्ञानिक एवं गोविज्ञान सलाहकार मंडल',
       en: 'Agronomist & Vedic Advisory Board'
     },
-    image: '/src/assets/images/goshala_herd_shelter_1792948906856.jpg',
+    image: '/images/goshala_herd_shelter_1792948906856.jpg',
     title: {
       mr: 'भारतीय देशी गिर गाईच्या दुधाचे आणि गो-उत्पादनांचे मानवी आरोग्यावरील चमत्कारिक परिणाम',
       hi: 'भारतीय देशी गिर गाय के दूध और गो-उत्पादों के मानव स्वास्थ्य पर चमत्कारी प्रभाव',

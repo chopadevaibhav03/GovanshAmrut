@@ -16,7 +16,7 @@ export const Hero: React.FC<HeroProps> = ({ currentLang, onOpenDonation }) => {
       {/* Background Photography with Rich Gradient Scrim */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/src/assets/images/hero_gir_cow_pasture_1792948905101.jpg"
+          src="/images/hero_gir_cow_pasture_1792948905101.jpg"
           alt="Majestic Indian Desi Gir Cow grazing in lush green organic pasture at sunrise"
           className="w-full h-full object-cover object-center"
           referrerPolicy="no-referrer"

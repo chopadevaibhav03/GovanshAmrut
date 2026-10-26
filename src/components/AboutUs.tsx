@@ -77,7 +77,7 @@ export const AboutUs: React.FC<AboutUsProps> = ({ currentLang }) => {
           <div className="lg:col-span-5 flex flex-col">
             <div className="relative rounded-2xl overflow-hidden border border-stone-200 shadow-md h-full min-h-[360px] group">
               <img
-                src="/src/assets/images/goshala_herd_shelter_1792948906856.jpg"
+                src="/images/goshala_herd_shelter_1792948906856.jpg"
                 alt="Govansh Goshala shelter with Gir cows and calves eating fresh green fodder"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 referrerPolicy="no-referrer"

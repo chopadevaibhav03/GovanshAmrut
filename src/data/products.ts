@@ -15,7 +15,7 @@ export const products: Product[] = [
       hi: '१ लीटर (कांच का जार)',
       en: '1 Litre (Glass Jar)'
     },
-    image: '/src/assets/images/traditional_bilona_ghee_1792948906344.jpg',
+    image: '/images/traditional_bilona_ghee_1792948906344.jpg',
     shortDesc: {
       mr: 'मातीच्या मडक्यात दही विरजून लाकडी रवीने दोन्ही बाजूंनी घुसळून मंद आचेवर कढवलेले अमृततुल्य सोनेरी तूप.',
       hi: 'मिट्टी के पात्र में दही जमाकर लकड़ी की दोतरफा मथनी से मथकर धीमी आंच पर पकाया गया सात्विक घी।',
@@ -97,7 +97,7 @@ export const products: Product[] = [
       hi: '५ लीटर जीवाणु कल्चर',
       en: '5 Litres Active Microbial Culture'
     },
-    image: '/src/assets/images/organic_farm_gokrupa_1792948906345.jpg',
+    image: '/images/organic_farm_gokrupa_1792948906345.jpg',
     shortDesc: {
       mr: 'शेतजमिनीतील गांडूळ आणि सूक्ष्म जीवाणूंना पुनरुज्जीवित करणारे, देशी गायीचे शेण-गोमूत्र व ताकापासून बनवलेले महा-कल्चर.',
       hi: 'मिट्टी में केंचुओं और मित्र जीवाणुओं को जाग्रत करने वाला, देशी गाय के गोबर, गोमूत्र और छाछ से तैयार महा-कल्चर।',
@@ -179,7 +179,7 @@ export const products: Product[] = [
       hi: '५०० मिली',
       en: '500 ml Glass Bottle'
     },
-    image: '/src/assets/images/hero_gir_cow_pasture_1792948905101.jpg',
+    image: '/images/hero_gir_cow_pasture_1792948905101.jpg',
     shortDesc: {
       mr: 'निरोगी देशी गिर गायीच्या ताज्या गोमूत्राचे पारंपारिक बाष्पीभवन करून मिळवलेला गंधरहित शुद्ध आयुर्वेदिक अर्क.',
       hi: 'स्वस्थ देशी गिर गाय के ताजे गोमूत्र का पारंपरिक वाष्पीकरण विधि से निष्कर्षण कर बनाया गया दिव्य अर्क।',
@@ -261,7 +261,7 @@ export const products: Product[] = [
       hi: '२५ किलो बैग',
       en: '25 kg Eco Bag'
     },
-    image: '/src/assets/images/goshala_herd_shelter_1792948906856.jpg',
+    image: '/images/goshala_herd_shelter_1792948906856.jpg',
     shortDesc: {
       mr: 'देशी गिर गायीच्या शेणाचे जिवाणूंनी समृद्ध घन स्वरूप, जे पिकांच्या मुळांना संपूर्ण पोषण आणि संजीवनी देते.',
       hi: 'देशी गिर गाय के शुद्ध गोबर और जीवाणुओं से समृद्ध ठोस खाद, जो फसलों की जड़ों को दीर्घकालिक पोषण प्रदान करती है।',
@@ -343,7 +343,7 @@ export const products: Product[] = [
       hi: '३० पीस का बॉक्स',
       en: 'Box of 30 Incense Sticks'
     },
-    image: '/src/assets/images/traditional_bilona_ghee_1792948906344.jpg',
+    image: '/images/traditional_bilona_ghee_1792948906344.jpg',
     shortDesc: {
       mr: 'देशी गायीचे सुकलेले शेण, भीमसेनी कापूर, गुग्गुळ, लोबान आणि शुद्ध ए२ तुपापासून बनवलेली नैसर्गिक हवा शुद्ध करणारी धूप.',
       hi: 'देशी गाय के गोबर, भीमसेनी कपूर, गुग्गुल, लोबान और शुद्ध ए२ घी से निर्मित प्राकृतिक वातावरण शोधक धूप।',
@@ -425,7 +425,7 @@ export const products: Product[] = [
       hi: '१ लीटर बॉटल',
       en: '1 Litre Concentrated Bottle'
     },
-    image: '/src/assets/images/organic_farm_gokrupa_1792948906345.jpg',
+    image: '/images/organic_farm_gokrupa_1792948906345.jpg',
     shortDesc: {
       mr: 'दूध, दही, तूप, शेण आणि गोमूत्र या पाच पवित्र घटकांपासून बनवलेले पिकांची रोगप्रतिकारशक्ती आणि उत्पादन वाढवणारे टॉनिक.',
       hi: 'गाय के दूध, दही, घी, गोबर और गोमूत्र के पावन मिश्रण से निर्मित फसलों का प्राकृतिक टॉनिक।',

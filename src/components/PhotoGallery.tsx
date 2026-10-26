@@ -34,7 +34,7 @@ export const PhotoGallery: React.FC<PhotoGalleryProps> = ({ currentLang }) => {
     {
       id: '1',
       category: 'herd',
-      image: '/src/assets/images/hero_gir_cow_pasture_1792948905101.jpg',
+      image: '/images/hero_gir_cow_pasture_1792948905101.jpg',
       title: {
         mr: 'सकाळच्या सूर्यप्रकाशात मोकळ्या कुरणात चरणाऱ्या गिर गाई',
         hi: 'प्रातःकालीन सूर्यकिरणों में हरे चरागाहों में विचरण करती गिर गायें',
@@ -49,7 +49,7 @@ export const PhotoGallery: React.FC<PhotoGalleryProps> = ({ currentLang }) => {
     {
       id: '2',
       category: 'methods',
-      image: '/src/assets/images/traditional_bilona_ghee_1792948906344.jpg',
+      image: '/images/traditional_bilona_ghee_1792948906344.jpg',
       title: {
         mr: 'मातीच्या मडक्यात लाकडी रवीने पारंपारिक बिलोना मंथन',
         hi: 'मिट्टी के पात्र में लकड़ी के बिलोने द्वारा पारंपरिक दही मंथन',
@@ -64,7 +64,7 @@ export const PhotoGallery: React.FC<PhotoGalleryProps> = ({ currentLang }) => {
     {
       id: '3',
       category: 'farm',
-      image: '/src/assets/images/organic_farm_gokrupa_1792948906345.jpg',
+      image: '/images/organic_farm_gokrupa_1792948906345.jpg',
       title: {
         mr: 'गोकृपा अमृत आणि जीवामृताने लहलहणारी सेंद्रिय शेती',
         hi: 'गोकृपा अमृत और जीवामृत से लहलहाते विषमुक्त जैविक खेत',
@@ -79,7 +79,7 @@ export const PhotoGallery: React.FC<PhotoGalleryProps> = ({ currentLang }) => {
     {
       id: '4',
       category: 'herd',
-      image: '/src/assets/images/goshala_herd_shelter_1792948906856.jpg',
+      image: '/images/goshala_herd_shelter_1792948906856.jpg',
       title: {
         mr: 'गोवंश गोशाळेतील स्वच्छ निवारा आणि आनंदी वासरे',
         hi: 'गोवंश गोशाला का खुला स्वच्छ प्रांगण एवं खेलती बछिया',
