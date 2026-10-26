@@ -15,7 +15,7 @@ export const translations = {
     hero: {
       subheading: 'अहिंसा • सेंद्रिय शेती • शुद्ध देशी गिर गाय',
       heading: 'भारतीय देशी गायींचे संवर्धन आणि विषमुक्त नैसर्गिक शेती',
-      description: 'अनिता आणि रामकिसन चोपडे यांच्या प्रेरणेतून आणि कृषिशास्त्रज्ञांच्या मार्गदर्शनाखाली चालवली जाणारी गोवंश गोशाळा. पारंपारिक वैदिक पद्धतीने बनवलेले ए२ बिलोना तूप, गोकृपा अमृत आणि सेंद्रिय खतांच्या माध्यमातून निरोगी जीवन आणि समृद्ध शेतीचा संदेश.',
+      description: 'अनिता रामकिसन चोपडे यांच्या प्रेरणेतून आणि कृषिशास्त्रज्ञांच्या मार्गदर्शनाखाली चालवली जाणारी गोवंश गोशाळा. पारंपारिक वैदिक पद्धतीने बनवलेले ए२ बिलोना तूप, गोकृपा अमृत आणि सेंद्रिय खतांच्या माध्यमातून निरोगी जीवन आणि समृद्ध शेतीचा संदेश.',
       ctaPrimary: 'शुद्ध उत्पादने पहा',
       ctaSecondary: 'गोशाळेला सहकार्य करा',
       stats: {
@@ -33,7 +33,7 @@ export const translations = {
       badge: 'आमची कथा व तत्त्वप्रणाली',
       title: 'गोवंश गोशाळा: अनिता व रामकिसन चोपडे यांचा संकल्प',
       intro: 'गोवंश ही केवळ एक गोशाळा नसून भारतीय देशी गाईंच्या संवर्धनाची आणि रासायनिक खतांशिवाय शाश्वत शेती करण्याची एक पवित्र चळवळ आहे.',
-      foundersTitle: 'संस्थापक: अनिता व रामकिसन चोपडे',
+      foundersTitle: 'संस्थापक: अनिता रामकिसन चोपडे',
       foundersStory: 'ग्रामीण संस्कृती आणि गोमातेवरील अतूट श्रद्धेतून अनिता व रामकिसन चोपडे यांनी गोवंश गोशाळेची स्थापना केली. येथे दुधासाठी गाई पाळल्या जात नाहीत, तर गाईंची सेवा हेच आमचे जीवनव्रत आहे. वासरांचे पोट भरल्यानंतरच उरलेल्या दुधाचे वैदिक पद्धतीने दही व तूप बनवले जाते. म्हातार्‍या आणि भाकड झालेल्या गाई-बैलांची शेवटच्या श्वासापर्यंत तितक्याच प्रेमाने काळजी घेतली जाते.',
       agronomistTitle: 'कृषितज्ज्ञांचे (Agronomist) तांत्रिक मार्गदर्शन',
       agronomistStory: 'आमची सेंद्रिय शेती आणि गोकृपा अमृत उत्पादन प्रक्रिया मान्यताप्राप्त कृषितज्ज्ञांच्या सूक्ष्म मार्गदर्शनाखाली चालते. मातीची सुपीकता वाढवण्यासाठी देशी गाईचे शेण आणि गोमूत्रातील सूक्ष्म जीवाणूंचा वैज्ञानिक अभ्यास करून रासायनिक खते व कीटकनाशकांशिवाय उच्च प्रतीचे उत्पन्न कसे घ्यावे, याचे प्रात्यक्षिक आम्ही शेतकर्‍यांना देतो.',
@@ -178,7 +178,7 @@ export const translations = {
     hero: {
       subheading: 'अहिंसा • जैविक कृषि • शुद्ध देशी गिर गाय',
       heading: 'भारतीय देशी गोवंश का संरक्षण और विषमुक्त प्राकृतिक खेती',
-      description: 'अनीता और रामकिसन चोपडे की प्रेरणा और कृषि वैज्ञानिकों के मार्गदर्शन में संचालित गोवंश गोशाला। पारंपरिक वैदिक विधि से निर्मित ए२ बिलोना घी, गोकृपा अमृत और जैविक खाद द्वारा स्वस्थ जीवन और समृद्ध खेती का संदेश।',
+      description: 'अनीता रामकिसन चोपडे की प्रेरणा और कृषि वैज्ञानिकों के मार्गदर्शन में संचालित गोवंश गोशाला। पारंपरिक वैदिक विधि से निर्मित ए२ बिलोना घी, गोकृपा अमृत और जैविक खाद द्वारा स्वस्थ जीवन और समृद्ध खेती का संदेश।',
       ctaPrimary: 'शुद्ध उत्पाद देखें',
       ctaSecondary: 'गोशाला को सहयोग दें',
       stats: {
@@ -319,7 +319,7 @@ export const translations = {
     footer: {
       shloka: 'गावो विश्वस्य मातरः',
       shlokaMeaning: 'गाय समस्त संसार की माता है। इसकी रक्षा और सेवा से ही संपूर्ण पर्यावरण और मानव जाति का कल्याण संभव है।',
-      aboutShort: 'गोवंश गोशाला अनीता और रामकिसन चोपडे द्वारा संचालित एक आदर्श भारतीय देशी गिर गोशाला है।',
+      aboutShort: 'गोवंश गोशाला अनीता रामकिसन चोपडे द्वारा संचालित एक आदर्श भारतीय देशी गिर गोशाला है।',
       quickLinks: 'त्वरित लिंक',
       copyright: '© २०२६ गोवंश गोशाला एवं जैविक कृषि। समस्त अधिकार सुरक्षित।',
       madeFor: 'किसान कल्याण और गोमाता सेवा को समर्पित।'
@@ -341,7 +341,7 @@ export const translations = {
     hero: {
       subheading: 'Ahimsa • Zero-Budget Organic Farming • Pure Gir Breed',
       heading: 'Preserving Sacred Indigenous Cows & Poison-Free Organic Agriculture',
-      description: 'Founded by Anita and Ramkisan Chopade under expert agronomist guidance. Experience pure Vedic A2 Bilona ghee, Gokrupa Amrut bio-fertilizer, and sustainable farming knowledge dedicated to human health and environmental harmony.',
+      description: 'Founded by Anita Ramkisan Chopade under expert agronomist guidance. Experience pure Vedic A2 Bilona ghee, Gokrupa Amrut bio-fertilizer, and sustainable farming knowledge dedicated to human health and environmental harmony.',
       ctaPrimary: 'Explore Vedic Products',
       ctaSecondary: 'Support Cow Shelter',
       stats: {
@@ -360,7 +360,7 @@ export const translations = {
       title: 'Govansh Goshala: The Vision of Anita & Ramkisan Chopade',
       intro: 'Govansh is not merely a cow shelter, but a living revival of sacred indigenous cattle stewardship and regenerative, chemical-free farming.',
       foundersTitle: 'Founders: Anita and Ramkisan Chopade',
-      foundersStory: 'Rooted deeply in rural traditions and devotion to Gau Mata, Anita and Ramkisan Chopade established Govansh Goshala with one steadfast pledge: cows are our family, not commercial dairy commodities. Every mother cow feeds her calf first. Only the remaining milk is gently collected to prepare curd and Bilona ghee. Elderly, non-lactating cows and working bulls live out their natural lives in loving care and dignity.',
+      foundersStory: 'Rooted deeply in rural traditions and devotion to Gau Mata, Anita Ramkisan Chopade established Govansh Goshala with one steadfast pledge: cows are our family, not commercial dairy commodities. Every mother cow feeds her calf first. Only the remaining milk is gently collected to prepare curd and Bilona ghee. Elderly, non-lactating cows and working bulls live out their natural lives in loving care and dignity.',
       agronomistTitle: 'Agronomist Scientific Guidance',
       agronomistStory: 'Our organic cultivation and Gokrupa Amrut bio-enhancers are developed in close coordination with seasoned agricultural scientists. By analyzing the rich beneficial microflora in indigenous Gir cow dung and urine, our agronomist mentors ensure that rural farmers learn how to completely eliminate synthetic fertilizers, restore depleted topsoil, and cultivate resilient high-yield crops.',
       missionHeading: 'Our Three Guiding Pillars',
