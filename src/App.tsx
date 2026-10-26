@@ -16,17 +16,26 @@ import { BlogsSection } from './components/BlogsSection';
 import { TestimonialsSection } from './components/TestimonialsSection';
 import { ContactSection } from './components/ContactSection';
 import { Footer } from './components/Footer';
-import { Phone, MessageSquare, Heart } from 'lucide-react';
+import { Phone, MessageSquare } from 'lucide-react';
+
+type Theme = 'light' | 'dark';
 
 export default function App() {
   const [currentLang, setCurrentLang] = useState<Language>(() => {
     const saved = localStorage.getItem('govansh_lang');
     return (saved === 'mr' || saved === 'hi' || saved === 'en') ? saved : 'mr';
   });
+  const [theme, setTheme] = useState<Theme>(() => {
+    return localStorage.getItem('govansh_theme') === 'dark' ? 'dark' : 'light';
+  });
 
   useEffect(() => {
     localStorage.setItem('govansh_lang', currentLang);
   }, [currentLang]);
+
+  useEffect(() => {
+    localStorage.setItem('govansh_theme', theme);
+  }, [theme]);
 
   const handleOpenDonation = () => {
     const el = document.getElementById('donation');
@@ -36,12 +45,14 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#FDFBF7] text-stone-900 flex flex-col font-sans selection:bg-amber-200 selection:text-amber-950">
+    <div data-theme={theme} className="app-shell min-h-screen bg-[#FDFBF7] text-stone-900 flex flex-col font-sans selection:bg-amber-200 selection:text-amber-950">
       {/* 3-Zone Top Bar */}
       <Navbar
         currentLang={currentLang}
         onLanguageChange={setCurrentLang}
         onOpenDonation={handleOpenDonation}
+        theme={theme}
+        onToggleTheme={() => setTheme((current) => current === 'light' ? 'dark' : 'light')}
       />
 
       {/* Main Content Stream */}

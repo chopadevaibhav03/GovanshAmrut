@@ -2,18 +2,24 @@ import React, { useState, useRef, useEffect } from 'react';
 import { Language } from '../types';
 import { translations } from '../data/translations';
 import { Logo } from './Logo';
-import { Heart, Globe, Menu, X, ChevronDown, Check } from 'lucide-react';
+import { Heart, Globe, Menu, X, ChevronDown, Check, Moon, Sun } from 'lucide-react';
+
+type Theme = 'light' | 'dark';
 
 interface NavbarProps {
   currentLang: Language;
   onLanguageChange: (lang: Language) => void;
   onOpenDonation: () => void;
+  theme: Theme;
+  onToggleTheme: () => void;
 }
 
 export const Navbar: React.FC<NavbarProps> = ({
   currentLang,
   onLanguageChange,
-  onOpenDonation
+  onOpenDonation,
+  theme,
+  onToggleTheme
 }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [langDropdownOpen, setLangDropdownOpen] = useState(false);
@@ -64,7 +70,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             <a
               key={link.href}
               href={link.href}
-              className="whitespace-nowrap hover:text-amber-800 transition-colors py-1 relative after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-amber-600 after:scale-x-0 hover:after:scale-x-100 after:transition-transform"
+              className="whitespace-nowrap rounded-lg px-2 py-1 hover:bg-stone-100 hover:text-amber-800 transition-colors relative after:absolute after:bottom-0 after:left-2 after:right-2 after:h-0.5 after:bg-amber-600 after:scale-x-0 hover:after:scale-x-100 after:transition-transform"
             >
               {link.label}
             </a>
@@ -72,7 +78,18 @@ export const Navbar: React.FC<NavbarProps> = ({
         </nav>
 
         {/* Zone 3: Language Dropdown Selector + Primary Action */}
-        <div className="flex items-center gap-3 shrink-0">
+        <div className="flex items-center gap-2 sm:gap-3 shrink-0">
+
+          <button
+            type="button"
+            onClick={onToggleTheme}
+            className="p-2 rounded-xl bg-stone-100/90 hover:bg-stone-200/80 border border-stone-200 text-stone-800 transition-colors cursor-pointer"
+            aria-label={theme === 'light' ? 'Switch to dark theme' : 'Switch to light theme'}
+            aria-pressed={theme === 'dark'}
+            title={theme === 'light' ? 'Dark theme' : 'Light theme'}
+          >
+            {theme === 'light' ? <Moon className="w-4 h-4" /> : <Sun className="w-4 h-4" />}
+          </button>
           
           {/* Language Dropdown Selector */}
           <div className="relative" ref={dropdownRef}>
@@ -147,7 +164,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                 key={link.href}
                 href={link.href}
                 onClick={() => setMobileMenuOpen(false)}
-                className="px-3 py-2 rounded-lg text-base font-medium text-stone-800 hover:bg-amber-50 hover:text-amber-800 transition-colors"
+                className="px-3 py-2 rounded-lg text-base font-medium text-stone-800 hover:bg-stone-100 hover:text-amber-800 transition-colors"
               >
                 {link.label}
               </a>
