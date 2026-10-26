@@ -31,7 +31,7 @@ export const translations = {
     },
     about: {
       badge: 'आमची कथा व तत्त्वप्रणाली',
-      title: 'गोवंश गोशाळा: अनिता व रामकिसन चोपडे यांचा संकल्प',
+      title: 'गोवंश गोशाळा: अनिता रामकिसन चोपडे यांचा संकल्प',
       intro: 'गोवंश ही केवळ एक गोशाळा नसून भारतीय देशी गाईंच्या संवर्धनाची आणि रासायनिक खतांशिवाय शाश्वत शेती करण्याची एक पवित्र चळवळ आहे.',
       foundersTitle: 'संस्थापक: अनिता रामकिसन चोपडे',
       foundersStory: 'ग्रामीण संस्कृती आणि गोमातेवरील अतूट श्रद्धेतून अनिता व रामकिसन चोपडे यांनी गोवंश गोशाळेची स्थापना केली. येथे दुधासाठी गाई पाळल्या जात नाहीत, तर गाईंची सेवा हेच आमचे जीवनव्रत आहे. वासरांचे पोट भरल्यानंतरच उरलेल्या दुधाचे वैदिक पद्धतीने दही व तूप बनवले जाते. म्हातार्‍या आणि भाकड झालेल्या गाई-बैलांची शेवटच्या श्वासापर्यंत तितक्याच प्रेमाने काळजी घेतली जाते.',
@@ -359,7 +359,7 @@ export const translations = {
       badge: 'Our Mission & Heritage',
       title: 'Govansh Goshala: The Vision of Anita & Ramkisan Chopade',
       intro: 'Govansh is not merely a cow shelter, but a living revival of sacred indigenous cattle stewardship and regenerative, chemical-free farming.',
-      foundersTitle: 'Founders: Anita and Ramkisan Chopade',
+      foundersTitle: 'Founders: Anita Ramkisan Chopade',
       foundersStory: 'Rooted deeply in rural traditions and devotion to Gau Mata, Anita Ramkisan Chopade established Govansh Goshala with one steadfast pledge: cows are our family, not commercial dairy commodities. Every mother cow feeds her calf first. Only the remaining milk is gently collected to prepare curd and Bilona ghee. Elderly, non-lactating cows and working bulls live out their natural lives in loving care and dignity.',
       agronomistTitle: 'Agronomist Scientific Guidance',
       agronomistStory: 'Our organic cultivation and Gokrupa Amrut bio-enhancers are developed in close coordination with seasoned agricultural scientists. By analyzing the rich beneficial microflora in indigenous Gir cow dung and urine, our agronomist mentors ensure that rural farmers learn how to completely eliminate synthetic fertilizers, restore depleted topsoil, and cultivate resilient high-yield crops.',
